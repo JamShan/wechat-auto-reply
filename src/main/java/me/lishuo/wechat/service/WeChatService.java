@@ -32,8 +32,8 @@ public class WeChatService {
 			msg = new FormatXmlProcess().formatMsgXmlAnswer(
 					xmlEntity.getFromUserName(), xmlEntity.getToUserName(),
 					(String) jsonObj.get("text"));
-		} else if (302000 == code) {
-			// TODO parse another xmlanswer
+		} else {
+			// TODO parse another code
 			msg = new FormatXmlProcess().formatMsgXmlAnswer(
 					xmlEntity.getFromUserName(), xmlEntity.getToUserName(),
 					"comming soon~~");
